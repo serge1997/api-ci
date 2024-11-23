@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\RegionRequest;
 use App\Main\Region\Actions\RegionCreate;
 use App\Main\Region\Actions\RegionList;
+use App\Main\Region\Repository\RegionRepository;
 use Illuminate\Http\Request;
 use Psr\Container\ContainerInterface;
-
 class RegionController extends Controller
 {
     public function __construct(private ContainerInterface $container)

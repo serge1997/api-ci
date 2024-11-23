@@ -3,7 +3,7 @@ namespace App\Main\Municipality\Actions;
 
 use App\Http\Resources\MunicipalityResource;
 use App\Main\Municipality\Repository\MunicipalityRepositoryInterface;
-use App\Main\Municpality\Exception\MunicipalityExcpetion;
+use App\Main\Municpality\Exception\MunicipalityException;
 
 class MunicipalityList
 {
@@ -27,6 +27,6 @@ class MunicipalityList
                 $municpality
             );
         }
-        throw new MunicipalityExcpetion("l'identificateur introuvale");
+        throw new MunicipalityException("l'identificateur introuvale");
     }
 }
